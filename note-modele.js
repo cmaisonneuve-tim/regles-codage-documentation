@@ -3,7 +3,7 @@
  * de l'application Web de carnet de notes "Peanote".
  *
  * @see https://github.com/tastejs/todomvc/tree/gh-pages/examples/vanillajs 
- * Code inspiré librement de l'application TodoMVC
+ * 	Code adapté librement de l'application TodoMVC
  */
 (function () {
 	'use strict';
