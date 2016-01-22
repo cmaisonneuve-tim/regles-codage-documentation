@@ -2,7 +2,7 @@
 /**
  * Modèle de base, étendu par héritage par tout autre modèle de l'application.
  * Cette classe sert de couche d'abstarction pour l'accès à MySQL avec la 
- * librairie standard MySQLi de PHP.
+ * librairie MySQLi de PHP.
  */
 class Modele {
 	private $_sHote = "";
