@@ -1,9 +1,10 @@
 /**
- * Cette "classe" (NoteModele) contient les fonctionnalités de manipulation des données de notes
+ * Ce module (NoteModele) contient les fonctionnalités de manipulation des données
  * de l'application Web de carnet de notes "Peanote".
  *
  * @see https://github.com/tastejs/todomvc/tree/gh-pages/examples/vanillajs 
- * 	Code adapté librement de l'application TodoMVC
+ * 	Le code de ce module est adapté librement à partir du module correspondant 
+ * 	dans l'application TodoMVC disponible à cette adresse.
  */
 (function () {
 	'use strict';
@@ -50,7 +51,6 @@
 	NoteModele.prototype.lire = function (id, fRappel) {
 		var typeId = typeof id;
 		var fRappel = fRappel || function () {};
-
 		if (typeId === 'function') {
 			fRappel = id;
 			return this.sourceDonnees.rechercherTout(fRappel, NOTES_PAR_PAGE);
@@ -117,6 +117,8 @@
 	};
 
 	// Exporter à l'objet global (window).
+	// Remarquez qu'une seule variable globale est créée ("application")
+	// Cette variable sera partagée par tous les modules de notre application.
 	window.application = window.application || {};
 	window.application.NoteModele = NoteModele;
 })();
