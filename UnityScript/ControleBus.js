@@ -4,7 +4,6 @@
  * par: Vahik
  * modifié: 5/12/2015
  */
-
 var vitesseHorizonale: float = 1; //vietsse de déplacement horizontale du personnage
 var vitesseVerticale: float = 4;  //vietsse de saut du personnage
 var imgBusExplose: Sprite;        //image du bus explosé
