@@ -1,5 +1,5 @@
 /**
- * Ce module (NoteModele) contient les fonctionnalités de manipulation des données
+ * Cette "classe" (NoteModele) contient les fonctionnalités de manipulation des données de notes
  * de l'application Web de carnet de notes "Peanote".
  *
  * @see https://github.com/tastejs/todomvc/tree/gh-pages/examples/vanillajs 
