@@ -1,6 +1,6 @@
 #pragma strict
 /**
- * Gestion des déplacements et des collisions du perssonge
+ * Gestion des déplacements et des collisions du perssonge.
  * par: Vahik
  * modifié: 5/12/2015
  */
