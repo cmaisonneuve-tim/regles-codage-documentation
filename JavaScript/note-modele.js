@@ -116,7 +116,7 @@
 		});
 	};
 
-	// Rendre notre Modele accessible globalement (window).
+	// Rendre notre Modele accessible globalement (objet window).
 	// Remarquez qu'une seule variable globale est créée ("application")
 	// Cette variable sera partagée par tous les modules de notre application.
 	window.application = window.application || {};
