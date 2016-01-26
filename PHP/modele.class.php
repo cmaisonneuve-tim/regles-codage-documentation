@@ -143,7 +143,7 @@ class Modele {
 	/**
 	 * Supprime un ou plusieurs enregistrements dans la source de données.
 	 * Cette méthode appelle modifierEnrgs() avec le même argument : c'est donc
-	 * un synonyme de cette dernière.
+	 * un synonyme de cette dernière méthode.
 	 */
 	protected function supprimerEnrgs($sRequete) {
 		return $this -> modifierEnrgs($sRequete);
