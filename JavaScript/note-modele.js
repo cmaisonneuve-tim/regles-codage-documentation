@@ -29,10 +29,10 @@
 	 * @param {function} fRappel La fonction à appeler une fois la note créée.
 	 */
 	NoteModele.prototype.creer = function (titre, fRappel) {
-		var titre = titre || '';
-		var fRappel = fRappel || function () {};
+		let titre = titre || '';
+		let fRappel = fRappel || function () {};
 
-		var nouvelleNote = {
+		let nouvelleNote = {
 			titre: titre.trim(),
 			archivee: false,
 			importante: false
@@ -49,8 +49,8 @@
 	 * @param {function} fRappel La fonction à appeler lorsque la ou les notes sont retournées
 	 */
 	NoteModele.prototype.lire = function (id, fRappel) {
-		var typeId = typeof id;
-		var fRappel = fRappel || function () {};
+		let typeId = typeof id;
+		let fRappel = fRappel || function () {};
 		if (typeId === 'function') {
 			fRappel = id;
 			return this.sourceDonnees.rechercherTout(fRappel, NOTES_PAR_PAGE);
@@ -96,7 +96,7 @@
 	 * @param {function} fRappel Fonction à appeler lorsque le décompte est complété.
 	 */
 	NoteModele.prototype.decompterNotes = function (fRappel) {
-		var decompteNotes = {
+		let decompteNotes = {
 			archivees: 0,
 			importantes: 0,
 			total: 0
